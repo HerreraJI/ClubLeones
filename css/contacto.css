@@ -1,0 +1,17 @@
+#logoNav {
+    height: 130px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width:1024px) {
+    #logoNav {
+        height: 130px;
+        position: absolute;
+        top: -13px;
+        left: -13px;
+        transform: translate(0%);
+    }
+}

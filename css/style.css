@@ -1,0 +1,180 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-colorBlue: #0000ac;
+    --main-colorWhite: #ffffff;
+}
+
+/* landing */
+
+
+#principal {
+    background-image: url(/img/abrazojugadoresEspalda.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/*toDo: al hacer scroll esta encima del nav*/
+#asociarse {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#frasePrincipal {
+    display: inline-block;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    color: var(--main-colorWhite);
+    transform: translate(-50%);
+}
+
+#logoNav {
+    height: 130px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width:1024px) {
+    #logoNav {
+        height: 130px;
+        position: absolute;
+        top: -13px;
+        left: -13px;
+        transform: translate(0%);
+    }
+}
+
+/* PARTIDOS */
+
+#partidos {
+    display: flex;
+    height: 12rem;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    scrollbar-color: #fff #555;
+    scrollbar-width: thin;
+}
+
+/* NOTICIAS */
+#seccionNoticias .card {
+    width: 100%;
+}
+
+#seccionNoticias img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+/* DEPORTES */
+
+.imgDeporte {
+    height: 30rem;
+    width: 15rem;
+    position: relative;
+    padding: 0 !important;
+    background-size: cover; 
+    background-position: center;
+}
+
+.imgDeporte span{
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.texto-deporte {
+    position: absolute;
+    background-color: var(--main-colorBlue);
+    color: var(--main-colorWhite);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    display: grid;
+    align-items: center;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.texto-deporte:hover {
+    opacity: 1;   
+}
+
+.texto-deporte ul{
+    list-style: none;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+    gap: 1rem;   
+}
+
+#Futbol1 {
+    background-image: url(/img/FutbolMasculino.jpg);
+}
+
+#box1 {
+    background-image: url(/img/Box3.jpg);
+}
+
+#hockey1 {
+    background-image: url(/img/hockey1.jpg);
+}
+
+#Basquet1 {
+    background-image: url(/img/Basquet1.jpg);
+}
+
+/* footer */
+#logoFooter {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+#footerSeccion ul li{
+padding: 1rem 0;
+list-style: none;
+border-radius: 4px;
+}
+
+#footerSeccion ul li:hover{
+    color: var(--main-colorWhite);
+    background-color: #0000ac;
+    font-size: 1.05rem;    
+}
+#footerSeccion ul li:hover a{
+    color: var(--main-colorWhite);
+}
+
+#footerSeccion ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s linear;
+}
+.redes{
+    display: flex;
+    /* border: 1px solid; */
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+.redes a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.redes a:hover{
+    color:var(--main-colorBlue);
+    transform: scale(1.2);
+}

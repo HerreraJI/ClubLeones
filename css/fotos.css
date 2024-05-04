@@ -1,0 +1,122 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logoNav{
+    height:130px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width:1024px){
+    #logoNav{
+        height:130px;
+        position: absolute;
+        top: -13px;
+        left: -13px;
+        transform: translate(0%);
+    }
+}
+
+#DeportesSection img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.gridSection{
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 80px)
+}
+
+.imgDeporte:hover{
+    filter:grayscale(1);;
+    transform: scale(0.98);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.invisible{
+    display: none;
+}
+.invisible{
+    display: block;
+}
+
+/* futbol */
+
+#FutbolMasculino{
+    border: 1px solid;
+    grid-area: 1/1/4/8;
+}
+#FutbolFemenino{
+    border: 1px solid;
+    grid-area: 4/4/6/8;
+}
+#FutbolNiños{
+    border: 1px solid;
+    grid-area: 4/1/8/4;
+}
+#FutbolRecreativo{
+    border: 1px solid;
+    grid-area: 6/4/8/8;
+}
+
+/* box */
+#box1{
+    border: 1px solid;
+    grid-area: 4/1/8/3;
+}
+
+#box2{
+    border: 1px solid;
+    grid-area: 4/3/8/6;
+}
+#box3{
+    border: 1px solid;
+    grid-area: 1/1/4/8;
+}
+#box4{
+    border: 1px solid;
+    grid-area: 4/6/8/8;
+}
+
+/* hockey */
+
+#hockey1{
+    border: 1px solid;
+    grid-area: 1/1/3/8;
+}
+
+#hockey2{
+    border: 1px solid;
+    grid-area: 3/1/5/8;
+}
+#hockey3{
+    border: 1px solid;
+    grid-area: 5/1/7/8;
+}#hockey4{
+    border: 1px solid;
+    grid-area: 7/1/8/8;
+}
+
+/* basquet */
+
+#Basquet1{
+    border: 1px solid;
+    grid-area: 1/1/8/3;
+}#Basquet2{
+    border: 1px solid;
+    grid-area: 1/3/8/5;
+}#Basquet3{
+    border: 1px solid;
+    grid-area: 1/5/8/7;
+}#Basquet4{
+    border: 1px solid;
+    grid-area: 1/7/8/8;
+}
