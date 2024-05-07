@@ -122,7 +122,7 @@
 }
 
 #Futbol1 {
-    background-image: url(/img/FutbolMasculino.jpg);
+    background-image: url(img/FutbolMasculino.jpg);
 }
 
 #box1 {
@@ -130,11 +130,11 @@
 }
 
 #hockey1 {
-    background-image: url(/img/hockey1.jpg);
+    background-image: url(../img/hockey1.jpg);
 }
 
 #Basquet1 {
-    background-image: url(/img/Basquet1.jpg);
+    background-image: url(.../img/Basquet1.jpg);
 }
 
 /* footer */
