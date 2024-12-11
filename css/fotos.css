@@ -1,0 +1,233 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logoNav{
+    height:130px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width:1024px){
+    #logoNav{
+        height:130px;
+        position: absolute;
+        top: -13px;
+        left: -13px;
+        transform: translate(0%);
+    }
+}
+
+#DeportesSection img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.gridSection{
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 80px);
+}
+.imgDeporte{
+    overflow: hidden;
+    position: relative;
+}
+
+.imgDeporte:hover{
+    filter:grayscale(1);;
+    transform: scale(0.98);
+    transition: 0.7s;
+    cursor: pointer;
+    
+}
+.imgDeporte h2{
+    font-size:1rem ;
+    position:absolute;
+    top: -2%;
+    left: 0%;
+    transform: translate(-50%,-100%);
+    transition: 1s;
+    color:white;  
+}
+.imgDeporte:hover h2{
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+
+}
+
+@media (min-width:720px){
+    .imgDeporte h2{
+        font-size:3rem ;
+        top: -2%;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        transition: 1s;
+        color:white;   
+    }
+    .imgDeporte:hover h2{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+}
+
+/* futbol */
+
+#FutbolMasculino{
+    border: 1px solid;
+    grid-area: 1/1/4/8;
+}
+#FutbolFemenino{
+    border: 1px solid;
+    grid-area: 4/4/6/8;
+}
+#FutbolNiños{
+    border: 1px solid;
+    grid-area: 4/1/8/4;
+}
+#FutbolRecreativo{
+    border: 1px solid;
+    grid-area: 6/4/8/8;
+}
+
+/* box */
+#box1{
+    border: 1px solid;
+    grid-area: 4/1/8/3;
+}
+
+#box2{
+    border: 1px solid;
+    grid-area: 4/3/8/6;
+}
+#box3{
+    border: 1px solid;
+    grid-area: 1/1/4/8;
+}
+#box4{
+    border: 1px solid;
+    grid-area: 4/6/8/8;
+}
+
+/* hockey */
+
+#hockey1{
+    border: 1px solid;
+    grid-area: 1/1/3/8;
+}
+
+#hockey2{
+    border: 1px solid;
+    grid-area: 3/1/5/8;
+}
+#hockey3{
+    border: 1px solid;
+    grid-area: 5/1/7/8;
+}#hockey4{
+    border: 1px solid;
+    grid-area: 7/1/8/8;
+}
+
+/* basquet */
+
+#Basquet1{
+    border: 1px solid;
+    grid-area: 1/1/8/3;
+}#Basquet2{
+    border: 1px solid;
+    grid-area: 1/3/8/5;
+}#Basquet3{
+    border: 1px solid;
+    grid-area: 1/5/8/7;
+}#Basquet4{
+    border: 1px solid;
+    grid-area: 1/7/8/8;
+}
+
+/* MODAL BASQUET MASC */
+
+.mimodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+#caption {
+    color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flechas {
+    color: #f1f1f1;
+    font-size: 3rem;
+}
+
+#flechas #izquierda {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translate(0, -50%);
+
+}
+
+#flechas #derecha {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 1.5rem;
+}
+
+#flechas #izquierda:hover,
+#flechas #derecha:hover,
+.close:hover {
+    cursor: pointer;
+    color: #bbb;
+}

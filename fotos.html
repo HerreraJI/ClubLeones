@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones</title>
+    <link rel="shortcut icon" href="/img/LogoConBorde.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/fotos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar nav-underline navbar-expand-lg bg-body-tertiary py-3 w-100 sticky-top " id="navFotos">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LEONES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 mb-lg-0 justify-content-evenly fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#DeportesSection">FOTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">TIENDA</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary" href="Form.html">ASOCIARSE</a>
+            </div>
+        </div>
+        <a href="index.html"><img src="/img/LogoConBorde.png" alt="logo del club" id="logoNav"></a>
+    </nav>
+
+    <div class="container" id="DeportesSection">
+        <div class="row">
+            <div class="col">
+                <h2 class="my-5 py-3 text-center bg-body-tertiary">FOTOS</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mimodal" id="mimodal">
+                <span class="close" id="close">&times;</span>
+                <img class="modal-content1" id="imgModal">
+                <p id="caption"></p>
+                <p id="flechas">
+                    <i class="fa-solid fa-chevron-left" id="izquierda"></i>
+                    <i class="fa-solid fa-chevron-right" id="derecha"></i>
+                </p>
+            </div>
+        </div>
+
+        <div class="mb-5" id="futbolSection">
+            <h2 class="">Fútbol</h2>
+            <div class="gridSection">
+                <div id="FutbolMasculino" class="imgDeporte">
+                    <img src="/img/FutbolMasculino.jpg" loading="lazy" alt="Seleccion Mayor">
+                    <h2>Mayores</h2>
+                </div>
+                <div id="FutbolFemenino" class="imgDeporte">
+                    <img src="/img/FutbolFemenino.jpg" loading="lazy" alt="Futbol Femenino festejo">
+                    <h2>Femenino</h2>
+                </div>
+                <div id="FutbolNiños" class="imgDeporte">
+                    <img src="/img/FutbolNiños.jpg" loading="lazy" alt="categoria 2017">
+                    <h2>Niños</h2>
+                </div>
+                <div id="FutbolRecreativo" class="imgDeporte">
+                    <img src="/img/FutbolRecreativo.jpg" loading="lazy" alt="Saque lateral">
+                    <h2>Recreativo</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5" id="BoxSection">
+            <h2 class="">Box</h2>
+            <div class="gridSection">
+                <div id="box1" class="imgDeporte">
+                    <img src="/img/Box.jpg" loading="lazy" alt="Promesa Welter">
+                    <h2>welter</h2>
+                </div>
+                <div id="box2" class="imgDeporte">
+                    <img src="/img/Boxeador.jpg" loading="lazy" alt="Marcos 'Locomotora' Castro">
+                    <h2>Mosca</h2>
+                </div>
+                <div id="box3" class="imgDeporte">
+                    <img src="/img/Box3.jpg" loading="lazy" alt="Izquierda de Ferreyra">
+                    <h2>Peso completo</h2>
+                </div>
+                <div id="box4" class="imgDeporte">
+                    <img src="/img/Box4.jpg" loading="lazy" alt="Equipo Amateur">
+                    <h2>Amateur</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5" id="HockeySection">
+            <h2>Hockey</h2>
+            <div class="gridSection">
+                <div id="hockey1" class="imgDeporte">
+                    <img src="/img/Hockey1.jpg" alt="Lorena Ramirez">
+                    <h2>Profesional</h2>
+                </div>
+                <div id="hockey2" class="imgDeporte">
+                    <img src="/img/Hockey2.jpg" alt="Leones vs Michigan">
+                    <h2>Amateur</h2>
+                </div>
+                <div id="hockey3" class="imgDeporte">
+                    <img src="/img/Hockey3.jpg" alt="Entrenamiento niñas Hockey">
+                    <h2>Niños</h2>
+                </div>
+                <div id="hockey4" class="imgDeporte">
+                    <img src="/img/Hockey4.jpg" alt="IX Encuentro en Santa Fe">
+                    <h2>Encuentros</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5" id="BasquetSection">
+            <h2>Básquet</h2>
+            <div class="gridSection">
+                <div id="Basquet1" class="imgDeporte">
+                    <img src="/img/Basquet1.jpg" alt="Espectacular tapa de Robinson">
+                    <h2>Masculino</h2>
+                </div>
+                <div id="Basquet2" class="imgDeporte">
+                    <img src="/img/Basquet2.jpg" alt="Canchas auxiliares">
+                    <h2>Amateur</h2>
+                </div>
+                <div id="Basquet3" class="imgDeporte">
+                    <img src="/img/Basquet3.jpg" alt="Entrenamiento para niños">
+                    <h2>Niños</h2>
+                </div>
+                <div id="Basquet4" class="imgDeporte">
+                    <img src="/img/Basquet4.jpg" alt="Basquet Femenino">
+                    <h2>Femenino</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center bg-dark text-white py-3">Derechos Reservados - Rafaela 2024 - HerreraJI</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="fotos.js"></script>
+    <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

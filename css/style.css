@@ -1,0 +1,403 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-colorBlue: #0000ac;
+    --main-colorWhite: #ffffff;
+}
+
+/* landing */
+
+
+#principal {
+    background-image: url(/img/abrazojugadoresEspaldaClara.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#leones-landing {
+    color: var(--main-colorBlue);
+    letter-spacing: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.378);
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #0000ac;
+    padding: 2rem;
+    transform: translate(-50%);
+    font-weight: 900;
+}
+
+#asociarse {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 4px 8px var(--main-colorBlue);
+}
+
+#logoNav {
+    height: 130px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width:1024px) {
+    #logoNav {
+        height: 130px;
+        position: absolute;
+        top: -13px;
+        left: -13px;
+        transform: translate(0%);
+    }
+}
+
+/* PARTIDOS */
+section {
+    border-radius: 5px;
+}
+
+#seccionPartidos span {
+    font-weight: 800;
+    color: rgb(0, 0, 89);
+}
+
+#partidos {
+    height: 12rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #fff #555;
+    scrollbar-width: thin;
+}
+
+#partidos .col {
+    scroll-snap-align:center;
+}
+
+/* NOTICIAS */
+#seccionNoticias .card {
+    width: 100%;
+}
+
+#seccionNoticias .card:hover {
+    cursor: pointer;
+}
+
+#seccionNoticias img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+/* DEPORTES */
+
+.imgDeporte {
+    height: 30rem;
+    width: 15rem;
+    position: relative;
+    padding: 0 !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.imgDeporte span {
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.texto-deporte {
+    position: absolute;
+    background-color: var(--main-colorBlue);
+    color: var(--main-colorWhite);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    display: grid;
+    align-items: center;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.texto-deporte:hover {
+    opacity: 1;
+}
+
+.texto-deporte ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+#Futbol1 {
+    background-image: url(/img/FutbolMasculino.jpg);
+}
+
+#box1-deporte{
+    background-image: url(/img/Box3.jpg);
+}
+
+#hockey1-deporte {
+    background-image: url(/img/hockey1.jpg);
+}
+
+#Basquet1-deporte{
+    background-image: url(/img/Basquet1.jpg);
+}
+
+/* footer */
+
+#footerSeccion {
+    border-top: 1px solid;
+}
+
+#logoFooter {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#footerSeccion ul li {
+    padding: 1rem;
+    list-style-type: '➕';
+    border-radius: 4px;
+}
+
+
+
+#footerSeccion ul li:hover {
+    color: var(--main-colorWhite);
+    background-color: #0000ac;
+    font-size: 1.05rem;
+}
+
+#footerSeccion ul li:hover a {
+    color: var(--main-colorWhite);
+}
+
+#footerSeccion ul a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+#footerSeccion .redes {
+    display: flex;
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+
+#footerSeccion .redes a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+#footerSeccion .redes a:hover {
+    color: var(--main-colorBlue);
+    transform: scale(1.2);
+}
+
+
+/* boton flotante */
+#store{
+    background-color: #404040;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 0.5s;
+    
+}
+#store a{
+    color: white;
+    font-size: 1.5rem;    
+}
+
+#store:hover{
+    background-color:#656565;
+    width: 6rem;
+    height: 6rem;
+}
+
+.latido {
+    animation: latido 1.5s ease-in-out infinite both;
+}
+
+@keyframes latido {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+/* FIN INDEX HTML */
+
+/* CONTACTO HTML */
+
+#lista-contactos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-contactos ul li {
+    padding: 1rem;
+}
+
+#lista-contactos .redes {
+    border-left: 0;
+    border-top: 1px solid gray;
+
+}
+
+@media (min-width:575px) {
+    #lista-contactos .redes {
+        border-top: 0;
+        border-left: 1px solid gray;
+
+    }
+}
+
+#lista-contactos .redes i {
+    color: black;
+    font-size: 3rem;
+    padding: 1rem;
+    transition: 1s;
+    transform-origin: center;
+}
+
+#lista-contactos .redes a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#lista-contactos .redes a:hover i {
+    transform: rotate(360deg);
+}
+
+/* FIN CONTACTO HTML */
+
+/* FORM HTML */
+
+#fotoForm {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#text-contraseña ul {
+    list-style-type: '🖊️';
+    color: red;
+}
+
+form cite {
+    display: none;
+    color: red !important;
+}
+
+#iconoPass {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-25%, -50%);
+}
+
+#ocultar{
+    display: none;
+}
+
+#bloque {
+    position: relative; 
+}
+/* FIN FORM HTML */
+
+/* STORE HTML */
+
+#imagenes-svg svg {
+    width: 60%;
+    height: 60%;
+}
+
+.entrada-izq {
+    animation: entrada-izq 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+}
+@keyframes entrada-izq {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.entrada-der {
+    animation: entrada-der 0.8s cubic-bezier(0.68,-0.55,0.27,1.55) both;
+}
+
+@keyframes entrada-der {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #6d6df3;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  /* FIN STORE HTML */

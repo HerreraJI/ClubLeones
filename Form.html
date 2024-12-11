@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leones</title>
+    <link rel="shortcut icon" href="/img/LogoConBorde.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-underline bg-body-tertiary py-3 w-100 position z-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LEONES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 mb-lg-0 justify-content-evenly fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">FOTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary active" href="Form.html">ASOCIARSE</a>
+            </div>
+        </div>
+        <a href="index.html"><img src="/img/LogoConBorde.png" alt="logo del club" id="logoNav"></a>
+    </nav>
+    <!-- contenedor Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="my-5 py-3 text-center bg-body-tertiary">¡QUIERO SER SOCIO!</h2>
+            </div>
+        </div>
+        <div class="row bg-body-secondary mb-5">
+            <div class="col-md-6 g-0">
+                <img src="/img/abrazojugadoresEspalda.jpg" alt="" id="fotoForm">
+            </div>
+            <div class="col-md-6">
+                <!-- Form -->
+                <form class="container my-5" novalidate method="" id="form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleInputNombre1" class="form-label" id="">Nombre</label>
+                            <input type="text" name="Nombre" class="form-control" id="nombre" required placeholder="Ej: Juan ignacio">
+                            <cite id="">*Ingrese su nombre</cite>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleInputApellido1" class="form-label" id="">Apellido</label>
+                            <input type="text" name="Apellido" class="form-control" id="apellido" required placeholder="Ej: Herrera">
+                            <cite>*Ingrese su apellido</cite>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleDNI" class="form-label" id="">DNI</label>
+                            <input type="text" name="exampleDNI" class="form-control" id="dni" required placeholder="Ej: 34206543" onchange="validarDNI()">
+                            <cite>*Ingrese su DNI</cite>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="exampeCiudad" class="form-label" id="">Ciudad</label>
+                            <input type="text" name="exampeCiudad" class="form-control" id="ciudad" required placeholder="Ej: Rafaela">
+                            <cite>*ingrese su ciudad</cite>
+                        </div>
+                    </div>
+                    <div class="row mt-1 mt-md-5">
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleContraseña" class="form-label">Contraseña</label>
+                            <div id="bloque">
+                                <input type="password" name="exampleContraseña" class="form-control" id="contraseña" required >
+
+                                <!-- mostrar contraseña -->
+                                <div class="esconder-pass" id="iconoPass">
+                                    <a title="Mostrar contraseña"><i class="fa-solid fa-eye" id="mostrar"></i><i
+                                            class="fa-solid fa-eye-slash" id="ocultar"></i></a>
+                                </div>
+                            </div>
+                            <cite>*Ingrese contraseña</cite>
+                        </div>
+                        <div class="col-md-6 mb-3" id="text-contraseña">
+                            <ul>
+                                <li id="caracter">Al menos 7 caracteres</li>
+                                <li id="mayuscula">Al menos una Mayúscula</li>
+                                <li id="numero">Al menos un número</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="exampleInputMail1" class="form-label" id="emilLabel">Mail</label>
+                            <input type="email" name="email" class="form-control" id="emailInput" required
+                                onchange=validarEmail() placeholder="Ej: Example@mail.com">
+                            <cite>*Ingrese mail válido</cite>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="textArea-form" class="form-label" id="emilLabel">Comentario (Opcional)</label>
+                            <textarea type="tex" name="textArea-form" class="form-control" id="textArea-form" rows="4" placeholder="Deje su comentario">                            
+                            </textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-4" id="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center bg-dark text-white py-3">Derechos Reservados - Rafaela 2024 - HerreraJI</div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
