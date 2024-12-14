@@ -10,7 +10,7 @@
 
 
 #principal {
-    background-image: url(img/abrazojugadoresEspaldaClara.jpg);
+    background-image: url(../img/abrazojugadoresEspaldaClara.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -139,19 +139,19 @@ section {
 }
 
 #Futbol1 {
-    background-image: url(img/FutbolMasculino.jpg);
+    background-image: url(../img/FutbolMasculino.jpg);
 }
 
 #box1-deporte{
-    background-image: url(img/Box3.jpg);
+    background-image: url(../img/Box3.jpg);
 }
 
 #hockey1-deporte {
-    background-image: url(img/hockey1.jpg);
+    background-image: url(../img/hockey1.jpg);
 }
 
 #Basquet1-deporte{
-    background-image: url(img/Basquet1.jpg);
+    background-image: url(../img/Basquet1.jpg);
 }
 
 /* footer */
